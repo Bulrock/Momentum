@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="advanced-player-features">
+        <div class="title">Title of the Song</div>
+        <input type="range" min="0" max="100" value="20" class="progress">
+        <div class="duration">
+          <span class="current-time">0:00</span> /
+          <span class="total-time">0:00</span>
+        </div>
+        <div class="sound-container">
+          <img class="sound-icon" src="./assets/svg/sound-high.svg" alt="sounbar icon">
+          <input type="range" min="0" max="100" value="20" class="sound-slider">
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input placeholder="[Enter city]" type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input class="name" type="text" placeholder="[Enter name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quote-wrapper">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="settings">
+        <img src="./assets/svg/settings-icon.svg" alt="settings icon"><img>
+      </div>
+      <div class="social-media" id="social-media">
+          <ul class="social-media-list">
+              <li class="social-media-item">
+                <a href="https://github.com/bulrock" target="_blank">
+                  <img src="./assets/svg/icon-github.svg" alt="github icon"/>
+                </a>
+              </li>
+              <li class="copyrights">
+                <p>© 2022</p>
+              </li>
+          </ul>
+      </div>
+      <a href="https://rs.school/js/" class="social-link">
+        <img src="./assets/svg/rs-school-logo.svg" alt="rs school logo"/>
+      </a>
+  </div>
+  </footer>
+  <div class="settings-wrapper">
+    <div class="settings-container">
+      <div class="settings-header">
+        <p class="settings-header-text">Settings</p>
+        <div class="settings-close">
+          <img src="./assets/svg/close-circle.svg" alt="settings close circle">
+        </div>
+      </div>
+      <ul class="settings-items">
+        <li class="settings-section">
+          <p class="settings-section-text">Language</p>
+        </li>
+        <li class="settings-switch-section english" data="en-US">
+          <p class="settings-section-text">English</p>
+          <img class="switch" src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section russian" data="ru-RU">
+          <p class="settings-section-text">Russian</p>
+          <img class="switch" src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-section">
+          <p class="settings-section-text">Photo source</p>
+        </li>
+        <li class="settings-switch-section gitHub">
+          <p class="settings-section-text">GitHub</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section unsplashApi">
+          <p class="settings-section-text">Unsplash API</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section flickrApi">
+          <p class="settings-section-text">Flickr API</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-tag-section">
+          <input class="tag" type="text" placeholder="Enter background image search tags..."></input>
+        </li>
+        <li class="settings-section">
+          <p class="settings-section-text">Show/Hide</p>
+        </li>
+        <li class="settings-switch-section playerSection">
+          <p class="settings-section-text">Player</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section playerSection playerAdvancedSection">
+          <p class="settings-section-text">Player (advanced)</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        <li class="settings-switch-section weatherSection">
+          <p class="settings-section-text">Weather</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section timeSection">
+          <p class="settings-section-text">Time</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section dateSection">
+          <p class="settings-section-text">Date</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section greetingSection">
+          <p class="settings-section-text">Greating</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section quoteSection">
+          <p class="settings-section-text">Quotes</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+        <li class="settings-switch-section socialLinksSection">
+          <p class="settings-section-text">Social links</p>
+          <img src="./assets/svg/switch-passive.svg" alt="switcher passive">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type="module" src="./playList.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
